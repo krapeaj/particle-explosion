@@ -1,0 +1,3 @@
+/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles/SDL_Basic.dir
