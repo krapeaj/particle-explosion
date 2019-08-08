@@ -81,7 +81,57 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Screen">
+				<Option output="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/libScreen.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Screen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Screen/fast">
+				<Option output="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/libScreen.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Screen/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Screen.cpp">
+			<Option target="Screen"/>
+		</Unit>
+		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Screen.h">
+			<Option target="Screen"/>
+		</Unit>
 		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/main.cpp">
 			<Option target="SDL_Basic"/>
 		</Unit>

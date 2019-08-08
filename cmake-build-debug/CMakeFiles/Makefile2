@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug
 # Target rules for target CMakeFiles/SDL_Basic.dir
 
 # All Build rule for target.
-CMakeFiles/SDL_Basic.dir/all:
+CMakeFiles/SDL_Basic.dir/all: CMakeFiles/Screen.dir/all
 	$(MAKE) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/depend
 	$(MAKE) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target SDL_Basic"
@@ -81,7 +81,7 @@ all: CMakeFiles/SDL_Basic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SDL_Basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SDL_Basic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/SDL_Basic.dir/rule
@@ -98,6 +98,43 @@ CMakeFiles/SDL_Basic.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/SDL_Basic.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Screen.dir
+
+# All Build rule for target.
+CMakeFiles/Screen.dir/all:
+	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/depend
+	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Screen"
+.PHONY : CMakeFiles/Screen.dir/all
+
+# Include target in all.
+all: CMakeFiles/Screen.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Screen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Screen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Screen.dir/rule
+
+# Convenience name for target.
+Screen: CMakeFiles/Screen.dir/rule
+
+.PHONY : Screen
+
+# clean rule for target.
+CMakeFiles/Screen.dir/clean:
+	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/clean
+.PHONY : CMakeFiles/Screen.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Screen.dir/clean
 
 .PHONY : clean
 

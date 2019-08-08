@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/Users/JaeP/Desktop/SDL_Basic/Screen.cpp
+Screen.h
+/Users/JaeP/Desktop/SDL_Basic/Screen.h
+
 /Users/JaeP/Desktop/SDL_Basic/Screen.h
 SDL.h
 -
-
-/Users/JaeP/Desktop/SDL_Basic/main.cpp
-iostream
--
-math.h
--
-Screen.h
-/Users/JaeP/Desktop/SDL_Basic/Screen.h
 
 /usr/local/Cellar/sdl2/2.0.9_1/include/SDL2/SDL.h
 SDL_main.h

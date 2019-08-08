@@ -79,6 +79,7 @@ SDL_Basic_EXTERNAL_OBJECTS =
 
 SDL_Basic: CMakeFiles/SDL_Basic.dir/main.cpp.o
 SDL_Basic: CMakeFiles/SDL_Basic.dir/build.make
+SDL_Basic: libScreen.a
 SDL_Basic: CMakeFiles/SDL_Basic.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SDL_Basic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Basic.dir/link.txt --verbose=$(VERBOSE)

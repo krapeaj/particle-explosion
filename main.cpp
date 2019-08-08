@@ -1,39 +1,45 @@
 #include <iostream>
-#include <SDL.h>
+#include <math.h>
+#include "Screen.h"
+
 using namespace std;
+using namespace myparticleexplosion;
 
 int main() {
-    const int SCREEN_WIDTH = 800;
-    const int SCREEN_HEIGHT = 600;
+    const int COLOR_RANGE = 128;
+    const double RED_COLOR_CHANGE_RATE = 0.0006;
+    const double GREEN_COLOR_CHANGE_RATE = 0.002;
+    const double BLUE_COLOR_CHANGE_RATE = 0.001;
 
-    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
-        cout << "SDL init failed." << endl;
-        return 1;
+    Screen screen;
+    if (!screen.init()) {
+        cout << "Error initializing SDL." << endl;
     }
 
-    SDL_Window *window = SDL_CreateWindow("Particle Fire Explosion", SDL_WINDOWPOS_UNDEFINED,
-            SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-    if (!window) {
-        SDL_Quit();
-        return 2;
-    }
-
-    bool quit = false;
-    SDL_Event event;
     // game loop
-    while (!quit) {
+    unsigned char red, green, blue;
+    while (true) {
         // update particles
-        // draw particles
-        // check for messages/events
+        int elapsed = SDL_GetTicks();
+        red = COLOR_RANGE * (1 + cos(elapsed * RED_COLOR_CHANGE_RATE));
+        green = COLOR_RANGE * (1 + sin(elapsed * GREEN_COLOR_CHANGE_RATE));
+        green = COLOR_RANGE * (1 + sin(elapsed * BLUE_COLOR_CHANGE_RATE));
 
-        while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_QUIT) {
-                quit = true;
+
+        // draw particles
+        for (int y = 0; y < Screen::SCREEN_HEIGHT; y++) {
+            for (int x = 0; x < Screen::SCREEN_WIDTH; x++) {
+                screen.setPixel(x, y, red, green, blue);
             }
+        }
+        screen.update();
+
+        // check for messages/events
+        if (!screen.processEvents()) {
+            break;
         }
     }
 
-    SDL_DestroyWindow(window);
-    SDL_Quit();
+    screen.close();
     return 0;
 }

@@ -123,6 +123,46 @@ SDL_Basic/fast:
 	$(MAKE) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/build
 .PHONY : SDL_Basic/fast
 
+#=============================================================================
+# Target rules for targets named Screen
+
+# Build rule for target.
+Screen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Screen
+.PHONY : Screen
+
+# fast build rule for target.
+Screen/fast:
+	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/build
+.PHONY : Screen/fast
+
+Screen.o: Screen.cpp.o
+
+.PHONY : Screen.o
+
+# target to build an object file
+Screen.cpp.o:
+	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/Screen.cpp.o
+.PHONY : Screen.cpp.o
+
+Screen.i: Screen.cpp.i
+
+.PHONY : Screen.i
+
+# target to preprocess a source file
+Screen.cpp.i:
+	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/Screen.cpp.i
+.PHONY : Screen.cpp.i
+
+Screen.s: Screen.cpp.s
+
+.PHONY : Screen.s
+
+# target to generate assembly for a file
+Screen.cpp.s:
+	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/Screen.cpp.s
+.PHONY : Screen.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +199,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SDL_Basic"
+	@echo "... Screen"
+	@echo "... Screen.o"
+	@echo "... Screen.i"
+	@echo "... Screen.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
