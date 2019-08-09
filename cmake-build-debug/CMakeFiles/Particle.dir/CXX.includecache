@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/JaeP/Desktop/SDL_Basic/Particle.cpp
+Particle.h
+/Users/JaeP/Desktop/SDL_Basic/Particle.h
+stdlib.h
+-
+iostream
+-
+
+/Users/JaeP/Desktop/SDL_Basic/Particle.h
+

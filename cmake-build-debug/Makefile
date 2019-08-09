@@ -124,6 +124,32 @@ SDL_Basic/fast:
 .PHONY : SDL_Basic/fast
 
 #=============================================================================
+# Target rules for targets named Particle
+
+# Build rule for target.
+Particle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Particle
+.PHONY : Particle
+
+# fast build rule for target.
+Particle/fast:
+	$(MAKE) -f CMakeFiles/Particle.dir/build.make CMakeFiles/Particle.dir/build
+.PHONY : Particle/fast
+
+#=============================================================================
+# Target rules for targets named Swarm
+
+# Build rule for target.
+Swarm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Swarm
+.PHONY : Swarm
+
+# fast build rule for target.
+Swarm/fast:
+	$(MAKE) -f CMakeFiles/Swarm.dir/build.make CMakeFiles/Swarm.dir/build
+.PHONY : Swarm/fast
+
+#=============================================================================
 # Target rules for targets named Screen
 
 # Build rule for target.
@@ -135,6 +161,33 @@ Screen: cmake_check_build_system
 Screen/fast:
 	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/build
 .PHONY : Screen/fast
+
+Particle.o: Particle.cpp.o
+
+.PHONY : Particle.o
+
+# target to build an object file
+Particle.cpp.o:
+	$(MAKE) -f CMakeFiles/Particle.dir/build.make CMakeFiles/Particle.dir/Particle.cpp.o
+.PHONY : Particle.cpp.o
+
+Particle.i: Particle.cpp.i
+
+.PHONY : Particle.i
+
+# target to preprocess a source file
+Particle.cpp.i:
+	$(MAKE) -f CMakeFiles/Particle.dir/build.make CMakeFiles/Particle.dir/Particle.cpp.i
+.PHONY : Particle.cpp.i
+
+Particle.s: Particle.cpp.s
+
+.PHONY : Particle.s
+
+# target to generate assembly for a file
+Particle.cpp.s:
+	$(MAKE) -f CMakeFiles/Particle.dir/build.make CMakeFiles/Particle.dir/Particle.cpp.s
+.PHONY : Particle.cpp.s
 
 Screen.o: Screen.cpp.o
 
@@ -162,6 +215,33 @@ Screen.s: Screen.cpp.s
 Screen.cpp.s:
 	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/Screen.cpp.s
 .PHONY : Screen.cpp.s
+
+Swarm.o: Swarm.cpp.o
+
+.PHONY : Swarm.o
+
+# target to build an object file
+Swarm.cpp.o:
+	$(MAKE) -f CMakeFiles/Swarm.dir/build.make CMakeFiles/Swarm.dir/Swarm.cpp.o
+.PHONY : Swarm.cpp.o
+
+Swarm.i: Swarm.cpp.i
+
+.PHONY : Swarm.i
+
+# target to preprocess a source file
+Swarm.cpp.i:
+	$(MAKE) -f CMakeFiles/Swarm.dir/build.make CMakeFiles/Swarm.dir/Swarm.cpp.i
+.PHONY : Swarm.cpp.i
+
+Swarm.s: Swarm.cpp.s
+
+.PHONY : Swarm.s
+
+# target to generate assembly for a file
+Swarm.cpp.s:
+	$(MAKE) -f CMakeFiles/Swarm.dir/build.make CMakeFiles/Swarm.dir/Swarm.cpp.s
+.PHONY : Swarm.cpp.s
 
 main.o: main.cpp.o
 
@@ -197,12 +277,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... SDL_Basic"
+	@echo "... edit_cache"
+	@echo "... Particle"
+	@echo "... Swarm"
 	@echo "... Screen"
+	@echo "... Particle.o"
+	@echo "... Particle.i"
+	@echo "... Particle.s"
 	@echo "... Screen.o"
 	@echo "... Screen.i"
 	@echo "... Screen.s"
+	@echo "... Swarm.o"
+	@echo "... Swarm.i"
+	@echo "... Swarm.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -27,16 +27,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="SDL_Basic">
 				<Option output="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/SDL_Basic" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
@@ -76,6 +66,104 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 SDL_Basic/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Particle">
+				<Option output="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/libParticle.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Particle"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Particle/fast">
+				<Option output="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/libParticle.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Particle/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Swarm">
+				<Option output="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/libSwarm.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Swarm"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Swarm/fast">
+				<Option output="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/libSwarm.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Swarm/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -126,11 +214,23 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Particle.cpp">
+			<Option target="Particle"/>
+		</Unit>
+		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Particle.h">
+			<Option target="Particle"/>
+		</Unit>
 		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Screen.cpp">
 			<Option target="Screen"/>
 		</Unit>
 		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Screen.h">
 			<Option target="Screen"/>
+		</Unit>
+		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Swarm.cpp">
+			<Option target="Swarm"/>
+		</Unit>
+		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/Swarm.h">
+			<Option target="Swarm"/>
 		</Unit>
 		<Unit filename="/Users/JaeP/Desktop/SDL_Basic/main.cpp">
 			<Option target="SDL_Basic"/>

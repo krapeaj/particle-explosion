@@ -68,10 +68,12 @@ CMAKE_BINARY_DIR = /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug
 # Target rules for target CMakeFiles/SDL_Basic.dir
 
 # All Build rule for target.
+CMakeFiles/SDL_Basic.dir/all: CMakeFiles/Particle.dir/all
+CMakeFiles/SDL_Basic.dir/all: CMakeFiles/Swarm.dir/all
 CMakeFiles/SDL_Basic.dir/all: CMakeFiles/Screen.dir/all
 	$(MAKE) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/depend
 	$(MAKE) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target SDL_Basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target SDL_Basic"
 .PHONY : CMakeFiles/SDL_Basic.dir/all
 
 # Include target in all.
@@ -81,7 +83,7 @@ all: CMakeFiles/SDL_Basic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SDL_Basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SDL_Basic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/SDL_Basic.dir/rule
@@ -102,13 +104,87 @@ clean: CMakeFiles/SDL_Basic.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Particle.dir
+
+# All Build rule for target.
+CMakeFiles/Particle.dir/all:
+	$(MAKE) -f CMakeFiles/Particle.dir/build.make CMakeFiles/Particle.dir/depend
+	$(MAKE) -f CMakeFiles/Particle.dir/build.make CMakeFiles/Particle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Particle"
+.PHONY : CMakeFiles/Particle.dir/all
+
+# Include target in all.
+all: CMakeFiles/Particle.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Particle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Particle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Particle.dir/rule
+
+# Convenience name for target.
+Particle: CMakeFiles/Particle.dir/rule
+
+.PHONY : Particle
+
+# clean rule for target.
+CMakeFiles/Particle.dir/clean:
+	$(MAKE) -f CMakeFiles/Particle.dir/build.make CMakeFiles/Particle.dir/clean
+.PHONY : CMakeFiles/Particle.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Particle.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Swarm.dir
+
+# All Build rule for target.
+CMakeFiles/Swarm.dir/all:
+	$(MAKE) -f CMakeFiles/Swarm.dir/build.make CMakeFiles/Swarm.dir/depend
+	$(MAKE) -f CMakeFiles/Swarm.dir/build.make CMakeFiles/Swarm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target Swarm"
+.PHONY : CMakeFiles/Swarm.dir/all
+
+# Include target in all.
+all: CMakeFiles/Swarm.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Swarm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Swarm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Swarm.dir/rule
+
+# Convenience name for target.
+Swarm: CMakeFiles/Swarm.dir/rule
+
+.PHONY : Swarm
+
+# clean rule for target.
+CMakeFiles/Swarm.dir/clean:
+	$(MAKE) -f CMakeFiles/Swarm.dir/build.make CMakeFiles/Swarm.dir/clean
+.PHONY : CMakeFiles/Swarm.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Swarm.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Screen.dir
 
 # All Build rule for target.
 CMakeFiles/Screen.dir/all:
 	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/depend
 	$(MAKE) -f CMakeFiles/Screen.dir/build.make CMakeFiles/Screen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Screen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/JaeP/Desktop/SDL_Basic/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Screen"
 .PHONY : CMakeFiles/Screen.dir/all
 
 # Include target in all.
