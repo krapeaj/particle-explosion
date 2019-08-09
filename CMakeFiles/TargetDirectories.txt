@@ -1,6 +1,0 @@
-/Users/JaeP/Desktop/SDL_Basic/CMakeFiles/rebuild_cache.dir
-/Users/JaeP/Desktop/SDL_Basic/CMakeFiles/SDL_Basic.dir
-/Users/JaeP/Desktop/SDL_Basic/CMakeFiles/edit_cache.dir
-/Users/JaeP/Desktop/SDL_Basic/CMakeFiles/Particle.dir
-/Users/JaeP/Desktop/SDL_Basic/CMakeFiles/Swarm.dir
-/Users/JaeP/Desktop/SDL_Basic/CMakeFiles/Screen.dir

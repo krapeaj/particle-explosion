@@ -9,7 +9,6 @@ include_directories(${SDL2_INCLUDE_DIRS})
 add_library(Screen Screen.cpp)
 add_library(Particle Particle.cpp)
 add_library(Swarm Swarm.cpp)
-#include_directories(${PROJECT_SOURCE_DIR})
 
 add_executable(SDL_Basic main.cpp)
 target_link_libraries(SDL_Basic PRIVATE ${SDL2_LIBRARIES})

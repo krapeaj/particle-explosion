@@ -9,9 +9,9 @@
 /Users/JaeP/Desktop/SDL_Basic/Particle.cpp
 Particle.h
 /Users/JaeP/Desktop/SDL_Basic/Particle.h
-stdlib.h
+math.h
 -
-iostream
+stdlib.h
 -
 
 /Users/JaeP/Desktop/SDL_Basic/Particle.h

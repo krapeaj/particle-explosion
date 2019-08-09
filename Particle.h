@@ -5,16 +5,21 @@
 namespace myparticleexplosion {
 
     class Particle {
+    private:
+        double m_speed;
+        double m_direction;
+
     public:
         double m_x;
         double m_y;
 
+    private:
+        void init();
+
     public:
         Particle();
-
         virtual ~Particle();
-
-        void update();
+        void update(int interval);
     };
 
 

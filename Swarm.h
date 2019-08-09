@@ -8,10 +8,11 @@ namespace myparticleexplosion {
 
     class Swarm {
     public:
-        const static int NPARTICLES = 4000;
+        const static int NPARTICLES = 5000;
 
     private:
         Particle *m_particles;
+        int last_time;
 
     public:
         Swarm();
@@ -20,7 +21,7 @@ namespace myparticleexplosion {
 
         Particle *getParticles() { return m_particles; };
 
-        void update();
+        void update(int elapsed);
     };
 
 #endif //SDL_BASIC_SWARM_H
